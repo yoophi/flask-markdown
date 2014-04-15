@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <title>Monocle Dickens test</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/monocore.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/monoctrl.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/book.css') }}" />
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/monocore.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/monoctrl.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('book_js', book=book) }}"></script>
+  </head>
+
+  <body>
+    <div id="readerBg">
+      <div class="board"></div>
+      <div class="jacket"></div>
+      <div class="dummyPage"></div>
+      <div class="dummyPage"></div>
+      <div class="dummyPage"></div>
+      <div class="dummyPage"></div>
+      <div class="dummyPage"></div>
+    </div>
+
+    <div id="readerCntr">
+      <div id="reader"></div>
+    </div>
+  </body>
+
+</html>
